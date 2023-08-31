@@ -1,0 +1,22 @@
+{
+  "name": "@microfrontend-vue3/microfrontend-3-tabla",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --port 5003 --strictPort",
+    "serve": "vite preview --port 5003 --strictPort",
+    "build": "vite build",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "vite-plugin-top-level-await": "^1.1.1",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "autoprefixer": "^10.3.2",
+    "postcss": "^8.3.0",
+    "vite": "^4.0.5"
+
+  }
+}

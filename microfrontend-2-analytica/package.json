@@ -1,0 +1,19 @@
+{
+  "name": "@microfrontend-vue3/microfrontend-2-analytica",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --port 5002 --strictPort",
+    "serve": "vite preview --port 5002 --strictPort",
+    "build": "vite build",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "vite-plugin-top-level-await": "^1.1.1",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.0.5"
+  }
+}

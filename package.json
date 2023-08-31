@@ -1,0 +1,24 @@
+{
+  "name": "vue3-demo-esm",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "layout",
+    "microfrontend-1-formulario",
+    "microfrontend-2-analytica",    
+    "microfrontend-3-tabla"
+  ],
+  "scripts": {
+    "build": "pnpm --parallel --filter \"./**\" build ",
+    "serve": "pnpm --parallel --filter \"./**\" serve",
+    "build:remotes": "pnpm --parallel --filter \"./microfrontend-1-formulario\" --filter \"./microfrontend-3-tabla\" --filter \"./microfrontend-2-analytica\"  build",
+    "serve:remotes": "pnpm --parallel --filter \"./microfrontend-1-formulario\" --filter \"./microfrontend-3-tabla\" --filter \"./microfrontend-2-analytica\"  serve",
+    "dev:hosts": "pnpm --filter \"./layout\" dev",
+    "stop": "kill-port --port 5000,5001,5002,5003"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "workspace:*",
+    "kill-port": "^2.0.1"
+  },
+  "license": "MulanPSL-2.0"
+}
